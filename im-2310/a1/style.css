@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #fcff9a;
+}
+
+.website{
+    padding: 70px;
+    margin: 100px auto;
+    border-radius: 5px;
+    width: 50%;
+    border: 3px solid teal ;
+    text-align: center;
+
+}
+
+.first{
+    
+    margin: 100px auto;
+    font-size: 30px;
+    text-align: center;
+    color:teal;
+}
+
+.first p{
+    font-size: 30px;
+}
+
+.ASS1{
+    font-size: 30px;
+    background-color: teal;
+    color:#fcff9a ;
+}
+
+.Week2{
+    background-color: teal;
+    padding: 70px;
+    margin: 100px auto;
+    border-radius: 5px;
+    width: 50%;
+    color:#fcff9a ;
+    
+}
+.Week2 *{
+    background-color:teal;
+  }
+
+
+
+h2{
+    text-align: center;  
+}
+
+b{
+    font-size: 20px;
+}
+
+.Week3{
+    background-color: teal;
+    padding: 70px;
+    margin: 100px auto;
+    border-radius: 5px;
+    width: 50%;
+    color:#fcff9a ;
+    
+}
+.Week3 *{
+    background-color:teal;
+  }
