@@ -23,7 +23,7 @@ body{
   flex-direction: column;
   background-color: var(--col-01);
   color: var(--col-02);
-  padding: 10vw;
+  padding:5vw 15vw;
   text-align: center;
 }
 
@@ -80,7 +80,7 @@ button{
 }
 
 .RecipeImg{
-  width:50%
+  width: 55%;
 }
 
 .Attribution a{
