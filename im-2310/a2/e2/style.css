@@ -1,0 +1,95 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#F2F2F2;
+  --col-02:#736F34;
+  --col-03:#BFBA73;
+  --col-04:#BCBF60;
+  --border: 1px solid var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 10vw;
+  text-align: center;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  margin: 3vw 0;
+  padding: 5vw 0;
+}
+
+.FilterSection{
+  margin: 3vw 0;
+  text-align: left;
+  font-size: 25px;
+}
+
+button{
+  font-size: 20px;
+  color: var(--col-02);
+  outline: none;
+  border: none;
+  padding: 4px 10px;
+}
+
+.SelectedFilter{
+  background-color: var(--col-03);
+  border-radius: 10PX;
+}
+
+.RecipeLink{
+  margin-top: 20px;
+}
+
+.RecipeLink a{
+  background-color:var(--col-04);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 6px;
+  color:var(--col-02)
+}
+
+.RecipeName{
+  border-bottom: 1px solid var(--col-02);
+  margin:0 5vw
+}
+
+.RecipeImageContainer{
+  padding: 4vw 0;
+}
+
+.RecipeImg{
+  width:50%
+}
+
+.Attribution a{
+  color: var(--col-03);
+}
+
+.Publisher{
+  border-top: 2px solid var(--col-02);
+  margin :0 25vw;
+}
+
+
