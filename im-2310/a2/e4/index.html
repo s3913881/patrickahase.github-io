@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 
-<html tang="en">
-    <head>
+<html lang="en">
 
-        <meta charset="utf-8" name="viewport" content="width=drive-width,initial-scale=1.0">
+  <head>
 
-        <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
 
-        <script src="script.js"></script>
+  </head>
 
-    </head>
-    
-    <body>
+  <body>
 
-    </body>
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton" title="Play/Pause"></button>
+        <button class="video-control-button" id="muteButton" title="Mute/Unmute"></button>
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+        <button class="video-control-button" id="fullscreenButton" onclick="fullScreen()" title="Fullscreen"></button>
+      </div>
+
+    </div>
+
+  </body>
 
 </html>
