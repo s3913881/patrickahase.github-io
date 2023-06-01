@@ -22,7 +22,6 @@ body{
   width:30rem
 }
 
-
 /* Make clouds draggable and adjust transparency */
 .cloud{
   display: flex;
@@ -116,9 +115,6 @@ a{
       transform: scale(1.2);
     }
   }
-
-
-
 
 /* media part */
 @media only screen and (min-width: 600px) {
