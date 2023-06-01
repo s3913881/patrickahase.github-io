@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    filter: brightness(1);
+}
+
+body{
+  /* Import the night sky image as background image and fix the position to cover the whole web page */
+    background-image: url(image/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+  /* Hold the moon and clouds in place, and the text can be overwritten when you slide the mouse wheel. */
+  position: sticky;
+  top:2rem;
+}
+.moon{
+  /* Make the moon in the center of the page */
+  text-align: center;
+}
+#moon{
+  width:30rem
+}
+
+
+/* Make clouds draggable and adjust transparency */
+.cloud{
+  display: flex;
+  width: 18vw;
+  filter:opacity(0.9);
+  /* Add a pan animation and set the time to make the clouds pan slowly */
+  animation: moveClouds 1000s infinite linear;
+}
+
+/* Adjust the initial position of each cloud*/
+#cloud{
+  top: 10vh;
+  left: 2vw;
+}
+#cloud1{
+  top: 70vh;
+  left: 10vw;
+}
+#cloud3{
+  top: 40vh;
+  left: 20vw;
+}
+#cloud2{
+  top: 71vh;
+  left: 40vw;
+}
+#cloud4{
+  top: 0.1vh;
+  left: 30vw;
+}
+#cloud5{
+  top: 20vh;
+  left: 60vw;
+}
+
+/* Drag and drop section */
+.Draggable{
+  position: absolute;
+  cursor: pointer;
+}
+/* Add mouse hover and activation effect animations */
+.Draggable:hover{
+  animation: zoom 1s infinite alternate;
+}
+.Draggable:active{
+  animation: zoomIn 2s ease;
+}
+.Draggable > *{
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Set the background color and transparency of the text part */
+.words{
+  background-color: burlywood;
+  margin: 12vw;
+  padding: 6vw;
+  border-radius: 2rem;
+  filter:opacity(0.8);
+}
+/* Change the link color to be similar to the site color to provide a more harmonious visual effect for the user */
+a{
+  color: darkslateblue;
+}
+
+
+/* animation part */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw); 
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+
+/* media part */
+@media only screen and (min-width: 600px) {
+    :root{
+      font-size: 20px;
+    }
+    .img-wrapper{
+      width: 75%;
+      margin: 1.5rem auto;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    :root{
+      font-size: 24px;
+    }
+    .img-wrapper{
+      max-width: fit-content;
+      float: right;
+      margin: 1.5rem;
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    :root{
+      scroll-behavior: auto;
+    }
+  }
