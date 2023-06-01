@@ -25,7 +25,7 @@ body{
 /* Make clouds draggable and adjust transparency */
 .cloud{
   display: flex;
-  width: 18vw;
+  width: 17rem;
   filter:opacity(0.9);
   /* Add a pan animation and set the time to make the clouds pan slowly */
   animation: moveClouds 1000s infinite linear;
